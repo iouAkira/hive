@@ -4206,7 +4206,7 @@ public class HiveConf extends Configuration {
       "60s", new TimeValidator(TimeUnit.SECONDS),
       "Timeout for job monitor to get Spark job state."),
     SPARK_RPC_CLIENT_CONNECT_TIMEOUT("hive.spark.client.connect.timeout",
-      "1000ms", new TimeValidator(TimeUnit.MILLISECONDS),
+      "10000ms", new TimeValidator(TimeUnit.MILLISECONDS),
       "Timeout for remote Spark driver in connecting back to Hive client."),
     SPARK_RPC_CLIENT_HANDSHAKE_TIMEOUT("hive.spark.client.server.connect.timeout",
       "90000ms", new TimeValidator(TimeUnit.MILLISECONDS),
